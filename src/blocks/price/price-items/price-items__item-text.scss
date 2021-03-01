@@ -1,0 +1,16 @@
+.price-items__item-text {
+  margin: 0;
+  font-family: $font-stack;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+
+  height: 18px;
+
+  color: $color-text-black;
+
+  @media (min-width: $width-b) {
+    margin-left: 24px;
+  }
+}

@@ -1,0 +1,32 @@
+.page-footer__information {
+  margin-top: 16px;
+
+  font-family: $font-stack;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+
+  color: $color-text-gray;
+
+  opacity: 0.72;
+
+  @media(min-width: $width-m) {
+    margin-top: 32px;
+    margin-left: 40px;
+    margin-right: 24px;
+
+    width: 213px;
+    height: 48px;
+
+    text-align: right;
+  }
+
+  @media (min-width: $width-b) {
+    margin-left: 149px;
+    margin-right: 33px;
+
+    width: 330px;
+    height: 32px;
+  }
+}

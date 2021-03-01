@@ -1,0 +1,14 @@
+.services-image__item {
+  width: $width-s;
+
+  @media (min-width: $width-m) {
+    border-radius: 6px;
+    width: 360px;
+    height: 208px;
+  }
+
+  @media (min-width: $width-b) {
+    width: 531px;
+    height: 307px;
+  }
+}

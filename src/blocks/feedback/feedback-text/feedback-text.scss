@@ -1,0 +1,14 @@
+.feedback-text {
+  margin-left: 16px;
+  font-family: $font-stack;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $color-text-gray;
+
+  @media (min-width: $width-b) {
+    margin-left: 31px;
+
+    width: 376px;
+  }
+}

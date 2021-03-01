@@ -1,0 +1,12 @@
+.services-header {
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media (min-width: $width-b) {
+    width: 1120px;
+    justify-content: space-between;
+  }
+}

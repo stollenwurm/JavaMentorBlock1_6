@@ -1,0 +1,9 @@
+.price-items {
+  height: 260px;
+
+  background: $color-services;
+
+  @media(min-width: $width-m) {
+    display: none;
+  }
+}

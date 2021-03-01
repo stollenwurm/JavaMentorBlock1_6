@@ -1,0 +1,18 @@
+.price {
+  margin: 0 auto;
+  width: $width-s;
+  height: 548px;
+
+  position: relative;
+
+  border-top: 1px solid $color-green-line;
+
+  @media(min-width: $width-m) {
+    width: $width-m;
+    height: 613px;
+  }
+
+  @media (min-width: $width-b) {
+    width: 1120px;
+  }
+}

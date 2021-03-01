@@ -1,0 +1,15 @@
+.works-items {
+  height: 228px;
+
+  background: $color-services;
+
+  @media(min-width: $width-m) {
+    margin-top: 24px;
+    margin-bottom: 14px;
+    height: 160px;
+  }
+}
+
+.works-items--b {
+  height: 100%;
+}

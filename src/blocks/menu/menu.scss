@@ -1,0 +1,38 @@
+.menu {
+  width: $width-s;
+  height: $height-s;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: $color-white;
+
+  display: none;
+
+  @media (min-width: 360px) {
+    width: 360px;
+  }
+
+  @media (min-width: $width-m) {
+    height: 1024px;
+    box-shadow: 
+      -2px 0px 4px rgba(69, 79, 126, 0.02), 
+      16px 0px 52px rgba(14, 24, 80, 0.2);
+  }
+
+  @media (min-width: $width-b) {
+    width: 246px;
+    height: 1925;
+    display: block;
+    box-shadow: none;
+  }
+
+  @media (min-width: 1440px) {
+    width: 306px;
+  }
+}
+
+.menu--open {
+  display: block;
+  z-index: 100;
+}

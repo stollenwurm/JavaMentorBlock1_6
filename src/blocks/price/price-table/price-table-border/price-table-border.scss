@@ -1,0 +1,23 @@
+.price-table-border {
+  @media (min-width: $width-m) {
+    width: 720px;
+    height: 324px;
+  
+    position: absolute;
+    top: 119px;
+    left: 24px;
+  
+    z-index: 1;
+  
+    background: $color-white;
+    border-radius: 6px;
+  }
+
+  @media (min-width: $width-b) {
+    width: 1056px;
+    height: 324px;
+
+    top: 127px;
+    left: 32px;
+  }
+}

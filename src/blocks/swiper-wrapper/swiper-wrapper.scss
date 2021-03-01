@@ -1,0 +1,6 @@
+.swiper-wrapper {
+  @media(min-width: $width-m) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,23 @@
+.page-footer {
+  margin: 0 auto;
+  width: $width-s;
+  height: 148px;
+
+  border-top: 1px solid $color-green-line;
+
+  background: $color-services;
+
+  @media(min-width: $width-m) {
+    width: $width-m;
+    height: 104px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  @media (min-width: $width-b) {
+    width: 1120px;
+    height: 85px;
+  }
+}

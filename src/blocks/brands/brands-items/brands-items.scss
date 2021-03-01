@@ -1,0 +1,15 @@
+.brands-items {
+  height: 140px;
+
+  background: $color-services;
+
+  @media(min-width: $width-m) {
+    margin-top: 24px;
+    margin-bottom: 14px;
+    height: 160px;
+  }
+}
+
+.brands-items--b {
+  height: 100%;
+}

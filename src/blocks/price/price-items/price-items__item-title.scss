@@ -1,0 +1,14 @@
+.price-items__item-title {
+  margin: 16px 0 4px 0;
+  font-family: $font-stack;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $color-text-gray;
+  opacity: 0.72;
+
+  @media (min-width: $width-b) {
+    margin-left: 24px;
+  }
+}

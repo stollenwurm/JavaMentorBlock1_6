@@ -1,0 +1,18 @@
+.menu-nav__item-container {
+  padding-left: 16px;
+  padding-top: 24px;
+  
+  position: relative;
+
+  .menu-nav__item-container:first-child {
+    padding-top: 8px;
+  }
+  
+  @media (min-width: 360px) {
+    padding-left: 24px;
+  }
+
+  @media (min-width: $width-m) {
+    padding-top: 32px;
+  }
+}

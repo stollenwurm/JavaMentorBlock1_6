@@ -1,0 +1,11 @@
+.services-content {
+  @media(min-width: $width-m) {
+    display: flex;
+    justify-content: space-between;
+    gap: 48;
+  }
+
+  @media(min-width: $width-b) {
+    gap: 36;
+  }
+}

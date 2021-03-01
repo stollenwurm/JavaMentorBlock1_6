@@ -1,0 +1,25 @@
+.works {
+  margin: 0 auto;
+  width: $width-s;
+  height: 308px;
+
+  border-top: 1px solid $color-green-line;
+
+  @media(min-width: $width-m) {
+    margin-bottom: 32px;
+    width: $width-m;
+    height: 295px;
+
+    .services-button {
+      margin-top: 24px;
+    }
+  }
+
+  @media (min-width: $width-b) {
+    width: 1120px;
+  }
+}
+
+.works--b {
+  height: 100%;
+}

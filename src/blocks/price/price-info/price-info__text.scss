@@ -1,0 +1,16 @@
+.price-info__text {
+  width: 288px;
+  height: 137px;
+
+  font-family: $font-stack;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+
+  color: $color-text-black;
+
+  @media(min-width: $width-m) {
+    width: 421px;
+    height: 60px;
+  }
+}

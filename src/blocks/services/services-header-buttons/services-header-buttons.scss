@@ -1,0 +1,9 @@
+.services-header-buttons {
+  display: none;
+
+  @media (min-width: $width-b) {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+}

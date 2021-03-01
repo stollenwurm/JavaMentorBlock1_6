@@ -1,0 +1,12 @@
+.feedback-button__item {
+  width: 136px;
+  height: 32px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: $color-button;
+  border: none;
+  border-radius: 16px;
+}

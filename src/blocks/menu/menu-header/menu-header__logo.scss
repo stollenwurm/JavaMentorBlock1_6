@@ -1,0 +1,8 @@
+.menu-header__logo {
+  margin-left: 17px;
+  margin-right: auto;
+
+  @media (min-width: $width-b) {
+    margin-left: 0;
+  }
+}

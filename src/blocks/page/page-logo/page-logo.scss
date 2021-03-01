@@ -1,0 +1,15 @@
+.page-logo {
+  display: block;
+  height: 51px;
+  width: 97px;
+
+  background-image: url("../img/logo.png");
+  background-size: 97px 51px;
+  background-repeat: no-repeat;
+  
+  cursor: pointer;
+}
+
+.page-logo:hover {
+  opacity: 0.7;
+}

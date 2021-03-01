@@ -1,0 +1,14 @@
+.feedback-header {
+  padding: 24px 0 0 16px;
+
+  @media (min-width: $width-b) {
+    padding: 0;
+
+    .feedback-header--button {
+      position: absolute;
+
+      top: 32px;
+      right: 477px;
+    }
+  }
+}

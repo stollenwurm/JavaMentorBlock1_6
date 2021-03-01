@@ -1,0 +1,7 @@
+.hidden {
+  display: none;
+
+  @media (min-width: $width-b) {
+    display: flex;
+  }
+}

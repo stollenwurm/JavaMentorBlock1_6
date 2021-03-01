@@ -1,0 +1,28 @@
+.services {
+  padding-top: 24px;
+  padding-bottom: 7px;
+
+  width: $width-s;
+  height: 478px;
+
+  background: $color-services;
+
+  @media(min-width: $width-m) {
+    padding-bottom: 0;
+  
+    height: 409px;
+    width: $width-m;
+  }
+
+  @media (min-width: $width-b) {
+    padding-bottom: 14px;
+  
+    width: 1120px;
+    height: 535px;
+  }
+}
+
+.services--b {
+  height: 100%;
+  margin-bottom: 32px;
+}

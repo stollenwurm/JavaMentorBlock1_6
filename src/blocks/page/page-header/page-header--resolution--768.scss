@@ -1,0 +1,7 @@
+.page-header--resolution--768 {
+  display: none;
+
+  @media(min-width: $width-m) {
+    display: block;
+  }
+}

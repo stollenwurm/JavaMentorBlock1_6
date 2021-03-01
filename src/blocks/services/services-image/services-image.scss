@@ -1,0 +1,11 @@
+.services-image {
+  margin-top: 16px;
+
+  @media (min-width: $width-m) {
+    margin: 0 25px 0 0;
+  }
+
+  @media (min-width: $width-b) {
+    margin-right: 28px;
+  }
+}

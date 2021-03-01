@@ -1,0 +1,11 @@
+.services-header__title {
+  font-family: $font-stack;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+
+  @media (min-width: $width-b) {
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,33 @@
+.services-content__text {
+  margin-left: 16px;
+  font-family: $font-stack;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+
+  height: 90px;
+  width: 288px;
+
+  overflow: hidden;
+  text-overflow: clip;
+
+  @media (min-width: $width-m) {
+    margin-left: 24px;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 20px;
+  
+    height: 160px;
+    width: 312px;
+  }
+
+  @media(min-width: $width-b) {
+    margin-left: 34px;
+  
+    width: 490px;
+  }
+}
+
+.services-content__text--b {
+  height: 100%;
+}

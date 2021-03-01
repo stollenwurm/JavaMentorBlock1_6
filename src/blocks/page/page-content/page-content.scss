@@ -1,0 +1,13 @@
+.page-content {
+  @media(min-width: $width-b) {
+    position: absolute;
+    top: 0;
+    left: 246px;
+
+    background: $color-services;
+  }
+
+  @media(min-width: 1440px) {
+    left: 306px;
+  }
+}

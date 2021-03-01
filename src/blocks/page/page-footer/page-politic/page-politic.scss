@@ -1,0 +1,27 @@
+.page-politic {
+  display: block;
+  text-decoration: none;
+  margin-top: 16px;
+
+  font-family: $font-stack;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+
+  color: $color-text-gray;
+
+  opacity: 0.72;
+
+  @media(min-width: $width-m) {
+    margin-top: 32px;
+    margin-left: 35px;
+
+    width: 214px;
+    height: 16px;
+  }
+
+  @media (min-width: $width-b) {
+    margin-left: 145px;
+  }
+}

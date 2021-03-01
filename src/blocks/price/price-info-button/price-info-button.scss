@@ -1,0 +1,44 @@
+.price-info-button {
+  position: relative;
+
+  border: none;
+  background: none;
+
+  width: 192px;
+  height: 55px;
+
+  font-family: $font-stack;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+
+  text-align: left;
+
+  color: $color-text-black;
+
+  @media(min-width: $width-m) {
+    margin-top: 16px;
+
+    width: 310px;
+    height: 24px;
+  }
+}
+
+.price-info-button::after {
+  content: "";
+  position: absolute;
+  right: 75px;
+  bottom: 8px;
+
+  width: 8px;
+  height: 12px;
+
+  background-image: url("../img/price-info-arrow.svg");
+  background-repeat: no-repeat;
+
+  @media(min-width: $width-m) {
+    right: 0;
+    bottom: 6px;
+  }
+}

@@ -1,0 +1,12 @@
+.page-header__vertical-line {
+  padding: 0;
+
+  height: 32px;
+
+  border: 1px solid $color-border;
+  border-radius: 1px;
+
+  @media(min-width: $width-m) {
+    margin-left: 20px;
+  }
+}
