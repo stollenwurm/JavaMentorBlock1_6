@@ -25,4 +25,10 @@
 .services--b {
   height: 100%;
   margin-bottom: 32px;
+
+  @media (min-width: $width-b) {
+    margin-bottom: 0;
+
+    height: 535px;
+  }
 }

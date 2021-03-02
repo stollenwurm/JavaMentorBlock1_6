@@ -17,6 +17,8 @@
 
   color: $color-text-black;
 
+  transition: scale .5s ease;
+
   @media(min-width: $width-m) {
     margin-top: 16px;
 
@@ -41,4 +43,10 @@
     right: 0;
     bottom: 6px;
   }
+}
+
+.price-info-button:hover {
+  transform: scale(1.1);
+
+  cursor: pointer;
 }

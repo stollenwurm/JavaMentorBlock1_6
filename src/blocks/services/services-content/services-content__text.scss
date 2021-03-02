@@ -29,5 +29,13 @@
 }
 
 .services-content__text--b {
+  margin-bottom: -10px;
+
   height: 100%;
+
+  @media (min-width: $width-b) {
+    margin-bottom: 0;
+
+    height: 220px;
+  }
 }
