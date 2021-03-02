@@ -535,6 +535,10 @@ html {
   border: none;
   border-radius: 16px; }
 
+.feedback-button__item:hover {
+  opacity: 0.7;
+  cursor: pointer; }
+
 .feedback-button__text {
   margin-left: 8px;
   width: 90px;
@@ -594,6 +598,10 @@ html {
 .services--b {
   height: 100%;
   margin-bottom: 32px; }
+  @media (min-width: 1366px) {
+    .services--b {
+      margin-bottom: 0;
+      height: 535px; } }
 
 .services-header {
   height: 40px;
@@ -628,7 +636,12 @@ html {
   align-items: center;
   height: 24px;
   border: none;
-  background: none; }
+  background: none;
+  transition: scale .5s ease; }
+
+.services-button-item:hover {
+  transform: scale(1.1);
+  cursor: pointer; }
 
 .services-button-item__icon {
   padding-right: 16px; }
@@ -694,7 +707,12 @@ html {
       width: 490px; } }
 
 .services-content__text--b {
+  margin-bottom: -10px;
   height: 100%; }
+  @media (min-width: 1366px) {
+    .services-content__text--b {
+      margin-bottom: 0;
+      height: 220px; } }
 
 .services-header-buttons {
   display: none; }
@@ -754,7 +772,8 @@ html {
 .services-items__button:hover {
   background: #fff;
   border: 2px solid #b8ffec;
-  border-radius: 6px; }
+  border-radius: 6px;
+  cursor: pointer; }
 
 .services-items__button--selected {
   background: #fff;
@@ -1095,7 +1114,8 @@ html {
   line-height: 24px;
   letter-spacing: -0.2px;
   text-align: left;
-  color: #1b1c21; }
+  color: #1b1c21;
+  transition: scale .5s ease; }
   @media (min-width: 768px) {
     .price-info-button {
       margin-top: 16px;
@@ -1115,6 +1135,10 @@ html {
     .price-info-button::after {
       right: 0;
       bottom: 6px; } }
+
+.price-info-button:hover {
+  transform: scale(1.1);
+  cursor: pointer; }
 
 .price-table {
   display: none;
