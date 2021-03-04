@@ -1,13 +1,13 @@
 .brands {
   margin: 24px auto 0 auto;
-  width: $width-s;
+  width: 100%;
   height: 220px;
 
   border-top: 1px solid $color-green-line;
 
   @media(min-width: $width-m) {
     margin-bottom: 32px;
-    width: $width-m;
+    width: 100%;
     height: 295px;
 
     .services-button {
@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $width-b) {
-    width: 1120px;
+    width: 100%;
   }
 }
 

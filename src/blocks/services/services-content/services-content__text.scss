@@ -1,12 +1,13 @@
 .services-content__text {
   margin-left: 16px;
+  margin-right: 16px;
   font-family: $font-stack;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
 
   height: 90px;
-  width: 288px;
+  // width: $width-s;
 
   overflow: hidden;
   text-overflow: clip;
@@ -18,13 +19,13 @@
     line-height: 20px;
   
     height: 160px;
-    width: 312px;
+    // width: 312px;
   }
 
   @media(min-width: $width-b) {
     margin-left: 34px;
   
-    width: 490px;
+    // width: 490px;
   }
 }
 

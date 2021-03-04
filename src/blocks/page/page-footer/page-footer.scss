@@ -1,6 +1,6 @@
 .page-footer {
   margin: 0 auto;
-  width: $width-s;
+  width: 100%;
   height: 148px;
 
   border-top: 1px solid $color-green-line;
@@ -8,7 +8,7 @@
   background: $color-services;
 
   @media(min-width: $width-m) {
-    width: $width-m;
+    width: 100%;
     height: 104px;
 
     display: flex;
@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $width-b) {
-    width: 1120px;
+    width: 100%;
     height: 85px;
   }
 }

@@ -5,7 +5,11 @@
   
     position: absolute;
     top: 119px;
-    left: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
   
     z-index: 1;
   
@@ -16,8 +20,5 @@
   @media (min-width: $width-b) {
     width: 1056px;
     height: 324px;
-
-    top: 127px;
-    left: 32px;
   }
 }

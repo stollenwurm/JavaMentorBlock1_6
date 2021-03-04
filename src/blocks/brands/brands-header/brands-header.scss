@@ -1,6 +1,6 @@
 .brands-header {
   padding: 16px;
-  width: $width-s;
+  width: 100%;
 
   background: linear-gradient(90deg, $color-services 0%, $color-white 98.61%);
 
@@ -8,12 +8,12 @@
     padding-left: 24px;
 
     height: 56px;
-    width: $width-m;
+    width: 100%;
   }
 
   @media (min-width: $width-b) {
     padding-left: 32px;
     
-    width: 1120px;
+    width: 100%;
   }
 }

@@ -15,18 +15,21 @@ html {
 }
 
 .container {
+  max-width: 1440px;
+  min-width: 320px;
   margin: 0 auto;
-  // position: relative;
+  padding: 0;
+  position: relative;
 
   background: $color-services;
 
-  width: $width-s;
+  width: 100%;
 
   @media (min-width: $width-m) {
-    width: $width-m;
+    width: 100%;
   }
 
   @media (min-width: $width-b) {
-    width: $width-b;
+    width: 100%;
   }
 }

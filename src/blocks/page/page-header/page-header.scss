@@ -1,22 +1,27 @@
 .page-header {
+  margin: 0 auto;
   padding: 0 16px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  width: $width-s;
+  width: 100%;
   height: 87px;
+
+  background: $color-white;
 
   border-bottom: 1px solid $color-green-line;
 
   @media(min-width: $width-m) {
     padding: 0 24px;
 
-    width: $width-m;
+    width: 100%;
   }
 
   @media(min-width: $width-b) {
     display: none;
+
+    background: $color-services;
   }
 }

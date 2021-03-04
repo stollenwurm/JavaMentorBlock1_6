@@ -5,4 +5,8 @@
   margin: 0 6px;
 
   background: $color-pagination;
+
+  @media (min-width: 321px) {
+    display: none;
+  }
 }

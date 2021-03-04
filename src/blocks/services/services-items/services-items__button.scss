@@ -13,9 +13,18 @@
 }
 
 .services-items__button:hover {
+  padding: 6px 10px 7px 12px;
   background: $color-white;
   border: 2px solid $color-border-green;
   border-radius: 6px;
 
   cursor: pointer;
+
+  @media (min-width: $width-m) {
+    padding: 6px 10px 7px 12px;
+  }
+
+  @media (min-width: $width-b) {
+    padding: 6px 19px 7px 22px;
+  }
 }

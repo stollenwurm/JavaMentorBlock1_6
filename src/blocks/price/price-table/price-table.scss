@@ -3,7 +3,7 @@
 
   position: relative;
 
-  margin: 0 24px;
+  margin: 0 auto;
   padding: 0 16px;
 
   text-align: left;
@@ -37,8 +37,7 @@
   }
 
   @media (min-width: $width-b) {
-    margin-top: 8px;
-    margin-left: 32px;
+    margin: 8px auto 0 auto;
 
     width: 1056px;
 

@@ -1,5 +1,5 @@
 .price-info__text {
-  width: 288px;
+  width: 100%;
   height: 137px;
 
   font-family: $font-stack;
@@ -9,8 +9,12 @@
 
   color: $color-text-black;
 
+  @media(min-width: 448px) {
+    height: 70px;
+  }
+
   @media(min-width: $width-m) {
-    width: 421px;
+    width: 100%;
     height: 60px;
   }
 }
