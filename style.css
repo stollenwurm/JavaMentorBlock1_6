@@ -57,15 +57,19 @@ html {
   /* ширина scrollbar'a */ }
 
 .container {
+  max-width: 1440px;
+  min-width: 320px;
   margin: 0 auto;
+  padding: 0;
+  position: relative;
   background: #f8f8f8;
-  width: 320px; }
+  width: 100%; }
   @media (min-width: 768px) {
     .container {
-      width: 768px; } }
+      width: 100%; } }
   @media (min-width: 1366px) {
     .container {
-      width: 1366px; } }
+      width: 100%; } }
 
 .opacity {
   display: none;
@@ -152,20 +156,23 @@ html {
   margin-left: 16px; }
 
 .page-header {
+  margin: 0 auto;
   padding: 0 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 320px;
+  width: 100%;
   height: 87px;
+  background: #fff;
   border-bottom: 1px solid #d9fff5; }
   @media (min-width: 768px) {
     .page-header {
       padding: 0 24px;
-      width: 768px; } }
+      width: 100%; } }
   @media (min-width: 1366px) {
     .page-header {
-      display: none; } }
+      display: none;
+      background: #f8f8f8; } }
 
 .page-header--resolution--768 {
   display: none; }
@@ -199,6 +206,9 @@ html {
   .page-content {
     left: 306px; } }
 
+.page-content--fixed {
+  position: fixed; }
+
 .page-logo {
   display: block;
   height: 51px;
@@ -218,27 +228,45 @@ html {
   top: 0;
   left: 0;
   background: #fff;
-  display: none; }
+  opacity: 0;
+  z-index: -1;
+  transform: translateY(-676px); }
   @media (min-width: 360px) {
     .menu {
-      width: 360px; } }
+      width: 360px;
+      transform: translateY(-676px); } }
   @media (min-width: 768px) {
     .menu {
       height: 1024px;
-      box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2); } }
+      box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+      transform: translateY(-1024px); } }
   @media (min-width: 1366px) {
     .menu {
       width: 246px;
       height: 1925;
-      display: block;
-      box-shadow: none; } }
+      opacity: 1;
+      box-shadow: none;
+      transform: none; } }
   @media (min-width: 1440px) {
     .menu {
-      width: 306px; } }
+      width: 306px;
+      opacity: 1;
+      transform: none; } }
 
 .menu--open {
-  display: block;
-  z-index: 100; }
+  opacity: 1;
+  z-index: 100;
+  margin: 0;
+  transform: translateY(0);
+  transition: transform 0.5s ease-in; }
+
+@media (min-width: 1366px) {
+  .menu--fixed {
+    position: fixed; } }
+
+@media (min-width: 1440px) {
+  .menu--fixed {
+    position: fixed; } }
 
 .menu-header {
   padding: 0 16px;
@@ -441,19 +469,25 @@ html {
   width: 320px;
   height: 676px;
   background: #fff;
-  display: none; }
+  opacity: 0;
+  z-index: -1;
+  transform: translateY(-676px); }
   @media (min-width: 768px) {
     .feedback {
-      box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2); } }
+      box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+      transform: translateY(-676px); } }
   @media (min-width: 1366px) {
     .feedback {
       width: 440px;
       height: 940px;
-      box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2); } }
+      box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+      transform: translateY(-940px); } }
 
 .feedback--open {
-  display: block;
-  z-index: 100; }
+  opacity: 1;
+  z-index: 100;
+  transform: translateY(0);
+  transition: transform 0.5s ease-in; }
 
 .feedback-header {
   padding: 24px 0 0 16px; }
@@ -564,35 +598,42 @@ html {
   width: 320px;
   height: 676px;
   background: #fff;
-  display: none; }
+  opacity: 0;
+  z-index: -1;
+  transform: translateY(-676px); }
   @media (min-width: 768px) {
     .call {
-      box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2); } }
+      box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+      transform: translateY(-676px); } }
   @media (min-width: 1366px) {
     .call {
       width: 440px;
       height: 940px;
-      box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2); } }
+      box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+      transform: translateY(-940px); } }
 
 .call--open {
-  display: block;
-  z-index: 100; }
+  opacity: 1;
+  z-index: 100;
+  transform: translateY(0);
+  transition: transform 0.5s ease-in; }
 
 .services {
+  margin: 0 auto;
   padding-top: 24px;
   padding-bottom: 7px;
-  width: 320px;
+  width: 100%;
   height: 478px;
   background: #f8f8f8; }
   @media (min-width: 768px) {
     .services {
       padding-bottom: 0;
       height: 409px;
-      width: 768px; } }
+      width: 100%; } }
   @media (min-width: 1366px) {
     .services {
       padding-bottom: 14px;
-      width: 1120px;
+      width: 100%;
       height: 535px; } }
 
 .services--b {
@@ -685,12 +726,12 @@ html {
 
 .services-content__text {
   margin-left: 16px;
+  margin-right: 16px;
   font-family: "TT Lakes", sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
   height: 90px;
-  width: 288px;
   overflow: hidden;
   text-overflow: clip; }
   @media (min-width: 768px) {
@@ -699,12 +740,10 @@ html {
       margin-top: 0;
       font-size: 14px;
       line-height: 20px;
-      height: 160px;
-      width: 312px; } }
+      height: 160px; } }
   @media (min-width: 1366px) {
     .services-content__text {
-      margin-left: 34px;
-      width: 490px; } }
+      margin-left: 34px; } }
 
 .services-content__text--b {
   margin-bottom: -10px;
@@ -732,6 +771,8 @@ html {
       margin-right: 28px; } }
 
 .services-image__item {
+  display: block;
+  margin: 0 auto;
   width: 320px; }
   @media (min-width: 768px) {
     .services-image__item {
@@ -770,48 +811,58 @@ html {
       padding: 6px 22px 8px 23px; } }
 
 .services-items__button:hover {
+  padding: 6px 10px 7px 12px;
   background: #fff;
   border: 2px solid #b8ffec;
   border-radius: 6px;
   cursor: pointer; }
+  @media (min-width: 768px) {
+    .services-items__button:hover {
+      padding: 6px 10px 7px 12px; } }
+  @media (min-width: 1366px) {
+    .services-items__button:hover {
+      padding: 6px 19px 7px 22px; } }
 
 .services-items__button--selected {
   background: #fff;
   border: 2px solid #b8ffec;
   border-radius: 6px; }
+  @media (min-width: 1366px) {
+    .services-items__button--selected {
+      padding: 6px 19px 7px 22px; } }
 
 .brands {
   margin: 24px auto 0 auto;
-  width: 320px;
+  width: 100%;
   height: 220px;
   border-top: 1px solid #d9fff5; }
   @media (min-width: 768px) {
     .brands {
       margin-bottom: 32px;
-      width: 768px;
+      width: 100%;
       height: 295px; }
       .brands .services-button {
         margin-top: 24px; } }
   @media (min-width: 1366px) {
     .brands {
-      width: 1120px; } }
+      width: 100%; } }
 
 .brands--b {
   height: 100%; }
 
 .brands-header {
   padding: 16px;
-  width: 320px;
+  width: 100%;
   background: linear-gradient(90deg, #f8f8f8 0%, #fff 98.61%); }
   @media (min-width: 768px) {
     .brands-header {
       padding-left: 24px;
       height: 56px;
-      width: 768px; } }
+      width: 100%; } }
   @media (min-width: 1366px) {
     .brands-header {
       padding-left: 32px;
-      width: 1120px; } }
+      width: 100%; } }
 
 .brands-header__text {
   font-family: "TT Lakes", sans-serif;
@@ -826,9 +877,12 @@ html {
   background: #f8f8f8; }
   @media (min-width: 768px) {
     .brands-items {
-      margin-top: 24px;
-      margin-bottom: 14px;
-      height: 160px; } }
+      margin: 24px auto 14px auto;
+      height: 160px;
+      width: 768px; } }
+  @media (min-width: 1366px) {
+    .brands-items {
+      width: 1120px; } }
 
 .brands-items--b {
   height: 100%; }
@@ -910,6 +964,9 @@ html {
   opacity: 0.5;
   margin: 0 6px;
   background: #bbb; }
+  @media (min-width: 321px) {
+    .swiper-pagination-bullet {
+      display: none; } }
 
 .swiper-pagination-bullet-active {
   background: #b5b6bc;
@@ -926,19 +983,19 @@ html {
 
 .works {
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
   height: 308px;
   border-top: 1px solid #d9fff5; }
   @media (min-width: 768px) {
     .works {
       margin-bottom: 32px;
-      width: 768px;
+      width: 100%;
       height: 295px; }
       .works .services-button {
         margin-top: 24px; } }
   @media (min-width: 1366px) {
     .works {
-      width: 1120px; } }
+      width: 100%; } }
 
 .works--b {
   height: 100%; }
@@ -948,9 +1005,12 @@ html {
   background: #f8f8f8; }
   @media (min-width: 768px) {
     .works-items {
-      margin-top: 24px;
-      margin-bottom: 14px;
-      height: 160px; } }
+      margin: 24px auto 14px auto;
+      height: 160px;
+      width: 768px; } }
+  @media (min-width: 1366px) {
+    .works-items {
+      width: 1120px; } }
 
 .works-items--b {
   height: 100%; }
@@ -1001,17 +1061,17 @@ html {
 
 .price {
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
   height: 548px;
   position: relative;
   border-top: 1px solid #d9fff5; }
   @media (min-width: 768px) {
     .price {
-      width: 768px;
+      width: 100%;
       height: 613px; } }
   @media (min-width: 1366px) {
     .price {
-      width: 1120px; } }
+      width: 100%; } }
 
 .price-items {
   height: 260px;
@@ -1083,7 +1143,6 @@ html {
     .price-info {
       margin-left: 24px;
       margin-top: 24px;
-      width: 744px;
       height: 100px; } }
   @media (min-width: 1366px) {
     .price-info {
@@ -1091,16 +1150,19 @@ html {
       margin-top: 32px; } }
 
 .price-info__text {
-  width: 288px;
+  width: 100%;
   height: 137px;
   font-family: "TT Lakes", sans-serif;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2px;
   color: #1b1c21; }
+  @media (min-width: 448px) {
+    .price-info__text {
+      height: 70px; } }
   @media (min-width: 768px) {
     .price-info__text {
-      width: 421px;
+      width: 100%;
       height: 60px; } }
 
 .price-info-button {
@@ -1144,7 +1206,7 @@ html {
 .price-table {
   display: none;
   position: relative;
-  margin: 0 24px;
+  margin: 0 auto;
   padding: 0 16px;
   text-align: left;
   width: 720px;
@@ -1165,8 +1227,7 @@ html {
       display: block; } }
   @media (min-width: 1366px) {
     .price-table {
-      margin-top: 8px;
-      margin-left: 32px;
+      margin: 8px auto 0 auto;
       width: 1056px; }
       .price-table .price-items__item-title:first-child {
         width: 446px; }
@@ -1192,7 +1253,11 @@ html {
     height: 324px;
     position: absolute;
     top: 119px;
-    left: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
     z-index: 1;
     background: #fff;
     border-radius: 6px; } }
@@ -1200,26 +1265,24 @@ html {
 @media (min-width: 1366px) {
   .price-table-border {
     width: 1056px;
-    height: 324px;
-    top: 127px;
-    left: 32px; } }
+    height: 324px; } }
 
 .page-footer {
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
   height: 148px;
   border-top: 1px solid #d9fff5;
   background: #f8f8f8; }
   @media (min-width: 768px) {
     .page-footer {
-      width: 768px;
+      width: 100%;
       height: 104px;
       display: flex;
       justify-content: space-between;
       align-items: baseline; } }
   @media (min-width: 1366px) {
     .page-footer {
-      width: 1120px;
+      width: 100%;
       height: 85px; } }
 
 .page-footer__information {
@@ -1289,7 +1352,7 @@ html {
 
 .hidden {
   display: none; }
-  @media (min-width: 1366px) {
+  @media (min-width: 768px) {
     .hidden {
       display: flex; } }
 
