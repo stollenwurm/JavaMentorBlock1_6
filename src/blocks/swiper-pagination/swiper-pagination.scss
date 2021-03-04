@@ -1,0 +1,5 @@
+.swiper-pagination {
+  @media (min-width: $width-s) {
+    display: none;
+  }
+}

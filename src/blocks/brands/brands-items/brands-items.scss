@@ -3,6 +3,10 @@
 
   background: $color-services;
 
+  @media(min-width: $width-s) {
+    height: 100px;
+  }
+
   @media(min-width: $width-m) {
     margin: 24px auto 14px auto;
     height: 160px;
